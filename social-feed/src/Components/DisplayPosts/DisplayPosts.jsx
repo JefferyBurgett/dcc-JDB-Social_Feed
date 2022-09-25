@@ -8,11 +8,12 @@ const DisplayPosts = (props) => {
             </tr>
             </thead>
             <tbody>
-            {props.parentPosts.map((feedPost) => {
+            {props.parentPosts.map((feed, index) => {
                 return (
-                <tr>
-                    <td>{feedPost.Name}</td>
-                    <td>{feedPost.Post}</td>
+                    <tr key={index}>
+                    <td>{index}</td>
+                    <td>{feed.Name}</td>
+                    <td>{feed.Post}</td>
                 </tr>            
                 );
             })}
