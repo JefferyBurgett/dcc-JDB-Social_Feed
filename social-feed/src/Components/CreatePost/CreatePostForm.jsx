@@ -24,9 +24,12 @@ const CreatePostForm = (props) => {
             </div>
             <div className='form-group'>
             <label>Post</label>
+          
             <input type='text' className='form-control' value={feed} onChange={(event) => setFeed(event.target.value)}/>
             </div>
-            <button type='submit'>Create</button>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type='submit'className="btn btn-primary" style={{'marginTop' : '1em'}} >Create</button>
+            </div>
         </form>
     )
 }

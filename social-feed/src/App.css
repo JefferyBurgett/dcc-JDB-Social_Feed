@@ -2,6 +2,13 @@
     border: 1px;
     border-style: solid;
     border-color:black;
+    background-color: white;
+    border-radius: 25px;
     margin: 1em;
     padding: 1em;
 }
+
+.container{
+    background-color: rgb(142, 255, 204)
+}
+
