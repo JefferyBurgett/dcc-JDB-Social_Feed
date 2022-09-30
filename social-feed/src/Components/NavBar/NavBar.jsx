@@ -1,12 +1,13 @@
- import React from 'react'
+ import './NavBar.css'
  
- const NavBar = (props) => {
- <nav className="navbar navbar-expand-sm bg-white navbar-white">
-    <div className="container-fluid">
-        <span className="navbar-text">Social
-        <span className="text-muted">Feed</span></span>
+ const NavBar = () => {
+    return (
+ <nav className='navbar'>
+    <div className='container-fluid'>
+       <span><b className="navbar-text-one">Social</b>Feed</span>
     </div>
- </nav>
+    </nav>
+        )
  }
 
  export default NavBar;

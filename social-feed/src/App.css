@@ -1,14 +1,24 @@
+.margin-xs {
+    margin: .25em;
+}
+
+.main-page_body {
+    background-color: #E2F2EE;
+
+}
+
+.main-page_posts-section {
+    
+}
+
 .border-box {
     border: 1px;
     border-style: solid;
     border-color:black;
     background-color: white;
     border-radius: 25px;
-    margin: 1em;
-    padding: 1em;
-}
-
-.container{
-    background-color: rgb(142, 255, 204)
+    margin: 0px;
+    margin-bottom: 25px;
+    padding: 25px;
 }
 

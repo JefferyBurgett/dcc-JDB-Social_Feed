@@ -1,17 +1,17 @@
 import Post from '../Post_Folder/Post'
+import './DisplayPosts.css'
 
 const DisplayPosts = (props) => {
     return ( 
-        <table>
-            <tbody>
+        <div className='display-section'>
+            {/* <tbody> */}
             {props.parentPosts.map((feed, index) => {
                 return (
-                  <Post key={index} Post = {feed}/>    
-                                   
+                    <Post key={index} Post = {feed}/>               
                 )
             })}
-            </tbody>
-        </table> );
+            {/* </tbody> */}
+        </div> );
 }
  
 export default DisplayPosts;

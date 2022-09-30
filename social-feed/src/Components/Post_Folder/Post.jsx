@@ -1,30 +1,19 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './Post.css'
+import { faThumbsUp, faThumbsDown } from "@fortawesome/free-regular-svg-icons";
 
 const Post = (props) => {
   return (
-
-<div className="card">
-  <div className='border-radius: 20%'>
-  <div className="card-body">
-    <h5 className="card-title">{props.Post.name}</h5>
-    <p className="card-text">{props.Post.feed}</p>
-    {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+//Card Layout
+<div className="post_card-container">
+  <div className="post_card-author-name">{props.Post.name}</div>
+  <div className="post_card-comment">{props.Post.feed}</div>
+  <div className="post_card-feedback-icons">
+    <FontAwesomeIcon icon={faThumbsUp} />
+    <FontAwesomeIcon icon={faThumbsDown} />
   </div>
 </div>
-</div>
-
-
-
-    // <div>
-    //   <tr>
-    //     <div>
-    //       <td>{props.Post.name}</td>
-    //     </div>
-    //     <div>
-    //       <td>{props.Post.feed}</td>
-    //     </div>
-    //   </tr>
-    // </div>
-  );
-};
+  )
+}
 export default Post;

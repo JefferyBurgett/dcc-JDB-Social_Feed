@@ -1,0 +1,15 @@
+.post_card-container {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+
+}
+.post_card-author-name {
+    text-shadow: 10%;
+}
+.post_card-comment {
+
+}
+.post_card-feedback-icons {
+    align-items:center;
+}
