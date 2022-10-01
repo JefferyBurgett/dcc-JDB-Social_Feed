@@ -1,14 +1,15 @@
-.margin-xs {
-    margin: .25em;
-}
-
 .main-page_body {
     background-color: #E2F2EE;
+    border-radius: 2%;
 
 }
 
 .main-page_posts-section {
-    
+    /* height: 100vh; */
+    max-width: 60%;
+    margin: auto;
+    padding-bottom: 25px;
+    border-radius: 2%;
 }
 
 .border-box {
@@ -17,8 +18,9 @@
     border-color:black;
     background-color: white;
     border-radius: 25px;
-    margin: 0px;
-    margin-bottom: 25px;
+    max-width: 60%;
+  
+    
     padding: 25px;
 }
 

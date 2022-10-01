@@ -23,30 +23,6 @@ function App() {
       </div>
     </div>
 
-    //   {/* <div className="border-box">
-    //     <CreatePostForm createNewPost={addNewPost} />
-    //     <div className="col-sm-3"></div>
-    //   </div>
-    //   <div className="border-box">
-    //     <div className="col-md-6">
-    //       <DisplayPosts parentPosts={postFeed} />
-    //     </div>
-    //   </div>
-    // </div> */}
-    
-    
-//     {/* old navbar */}
-//     {/* <div className="container-fluid">
-//       <div className="row">
-//         <span style={{ margin: "1em" }}>
-//           Social
-//           <span className="text-muted">Feed</span>
-//         </span>
-//       </div>
-//     </div>
-//     <div className="container-fluid">
-//     <div class="row">
-// <div class="col-md-6 col-md-offset-3"></div> */}
     );
 }
 

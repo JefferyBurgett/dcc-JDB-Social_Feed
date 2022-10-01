@@ -4,7 +4,8 @@
     return (
  <nav className='navbar'>
     <div className='container-fluid'>
-       <span><b className="navbar-text-one">Social</b>Feed</span>
+       <h3 style={{margin: '1em'}}>Social 
+       <span className='text-muted'>Feed</span></h3>
     </div>
     </nav>
         )
