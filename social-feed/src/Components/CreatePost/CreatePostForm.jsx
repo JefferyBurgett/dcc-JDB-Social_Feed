@@ -14,33 +14,27 @@ const CreatePostForm = (props) => {
     console.log(newPost);
     props.createNewPost(newPost);
   }
-  const checkThisShit = {
-    height: '100px'
-  }
+
 
   return (
     <div className="create-section">
-        <form onSubmit={handleSubmit}>
-          <div className="form-input-container">
-              <div className="form-group">
-                <label>Name</label>
-                <input type="text" 
-                  onChange={(event) => setName(event.target.value)} 
-                  className="form-control" 
-                  value={name} />
-              </div>
-          <div className="form-group">
-            <label>Post</label>
-            <input type="text" 
-              onChange={(event) => setFeed(event.target.value)}
-              className="form-control" 
-              value={feed} />
-          </div>
-    </div>
-            <div className="button-container">
-              <button type="submit" className="btn btn-primary rounded-pill custom ">Create</button>
+      <form onSubmit={handleSubmit}>
+        <div className="form-input-container">        
+            <div className="form-group">
+              <label>Name</label>
+              <input type="text" onChange={(event) => setName(event.target.value)} className="form-control" value={name}/>
             </div>
-        </form>
+
+            <div className="form-group">
+              <label>Post</label>
+              <input type="text" onChange={(event) => setFeed(event.target.value)} className="form-control" value={feed}/>
+            </div>
+          </div> 
+                  
+        <div className="button-container">
+          <button type="submit" className="btn btn-primary rounded-pill custom ">Create</button>
+        </div>                      
+      </form>
     </div>
   );
 };

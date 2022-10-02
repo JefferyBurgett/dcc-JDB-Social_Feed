@@ -1,6 +1,12 @@
 .display-section {
- background-color:#E2F2EE ;
+    background-color:#E2F2EE ;
     width: 100%;
     height: 100vh;
-    border-radius: 2%;
+    border-radius: 20px;
+    overflow-x:hidden;
 }   
+
+.container {
+    border: 1px solid grey;
+    
+}

@@ -1,44 +1,50 @@
 .create-section {
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid grey;
   width: 100%;
   padding: 5px;
   background-color:white;
-  border-radius: 10px;
+  border-radius: 20px;
 }
  
 .form-input-container {
-  width: 90%;
+  width: 100%;
   float: left;
 }
 .button-container {
-  width: 50%;
+  width: 20%;
   float: right;
   text-align: right;
-  margin-right: 10%;
+  padding-right: 5%;
+  
 }
+
+
 .custom {
   width: 100px;
+  max-height: 25px;
+  align-items: center;
+ 
   
 }
 
 label {
-  float: left;
-  width: 150px;
-  text-align: right;
-  margin-right: 0.5em;
+  float: left
+
 }
 
 .form-group {
   width: 100%;
+  padding: 1%;
 }
 
-.form-group label {
-  background-color: black;
-  color: white;
-  width: 30%;
+.form-group label {  
+  width: 1%;
+  text-align: center;
+  padding: 1%;
 }
 
 .form-group input {
-  width: 60%;
+  width: 70%;
+  margin-left: 8%;
 }

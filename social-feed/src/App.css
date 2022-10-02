@@ -10,6 +10,7 @@
     margin: auto;
     padding-bottom: 25px;
     border-radius: 2%;
+    overflow: hidden;
 }
 
 .border-box {
@@ -18,9 +19,7 @@
     border-color:black;
     background-color: white;
     border-radius: 25px;
-    max-width: 60%;
-  
-    
+    max-width: 60%;     
     padding: 25px;
 }
 

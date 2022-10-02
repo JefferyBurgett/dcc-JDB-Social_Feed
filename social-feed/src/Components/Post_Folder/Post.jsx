@@ -1,28 +1,57 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Post.css'
-import { faThumbsUp, faThumbsDown } from "@fortawesome/free-regular-svg-icons";
+import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
+
+
+
 
 const Post = (props) => {
+  const [like, setLike] = useState('inactive')
+  function clickLike() {
+    if(like === 'inactive') {
+      setLike('like-active');
+    }
+    else {
+      setLike('inactive');
+    }
+    setDislike('inactive')
+  }
 
-  const myStyle = {
-    color: "white",
-    backgroundColor: "DodgerBlue",
-    padding: "10px",
-    fontFamily: "Arial"
-  };
+  const [dislike, setDislike] = useState('inactive')
+  function clickDislike() {
+    if(dislike === 'inactive') {
+      setDislike('dislike-active');
+    }
+    else {
+      setDislike('inactive');
+    }
+    setLike('inactive')
+  }
+  
+  
+    
+    return (
+     
+    <div className="container">
+      <h6 className="name">{props.Post.name}</h6>
 
-  return (
-    //Card Layout
-    <div className="post_card-container">
-      <h6 className="card-title">{props.Post.name}</h6>
-      <div className="post_card-comment">{props.Post.feed}
-      <div className="post_card-feedback-icons">
-        <FontAwesomeIcon icon={faThumbsUp} style={myStyle} />
-        <FontAwesomeIcon icon={faThumbsDown} />
-      </div>
+      <div className="comment">
+        <p>{props.Post.feed}</p>
+        <div className="feedback-icons">
+          <FontAwesomeIcon onClick={clickLike} icon={faThumbsUp} className={like} />
+          <FontAwesomeIcon onClick={clickDislike} icon={faThumbsDown} className={dislike}/>
+        </div>
       </div>
     </div>
   )
 }
-export default Post;
+
+        
+        
+        
+        
+        
+        export default Post;
+
+
