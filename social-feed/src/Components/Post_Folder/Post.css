@@ -2,8 +2,8 @@
     background-color: white;
     padding: 5px;
     border-bottom: 1px solid grey;
-    /* border-radius: 15px; */
-    /* overflow: auto; */
+   
+   
 }
 
 .name {
@@ -11,15 +11,13 @@
 }
 
 .comment {
-    /* overflow: auto; */
+    
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 25px;
 }
 
 .feedback-icons {
-    /* display: flex; */
-    /* align-items: flex-start; */
     text-align: right;
 }
 

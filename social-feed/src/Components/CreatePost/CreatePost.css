@@ -19,10 +19,9 @@
   
 }
 
-
 .custom {
   width: 100px;
-  max-height: 25px;
+  /* max-height: 25px - Need to figure out how to center the test while this is active */
   align-items: center;
  
   
